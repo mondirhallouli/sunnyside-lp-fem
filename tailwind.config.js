@@ -20,8 +20,12 @@ export default {
             },
             fontFamily: {
                 'barlowFont': ['Barlow', 'sans-serif'],
-                'FrauncesFont': ['Fraunces', 'sans-serif'],
+                'frauncesFont': ['Fraunces', 'serif'],
             },
+            backgroundImage: {
+                'headerBgImg-mobile': 'url("/images/mobile/image-header.jpg")',
+                'headerBgImg-desktop': 'url("/images/desktop/image-header.jpg")',
+            }
         },
     },
     plugins: [],
