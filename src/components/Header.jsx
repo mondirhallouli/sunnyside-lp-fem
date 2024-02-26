@@ -8,7 +8,7 @@ export default function Header() {
     };
 
     return (
-        <header className="w-screen h-[70vh] px-5 bg-headerBgImg-mobile bg-no-repeat bg-cover bg-center overflow-x-hidden md:h-screen md:bg-headerBgImg-desktop">
+        <header className="w-full h-[70vh] px-5 bg-headerBgImg-mobile bg-no-repeat bg-cover bg-center overflow-x-hidden md:h-screen md:bg-headerBgImg-desktop">
 
             <nav className="w-full relative py-10 mb-16 flex justify-between items-center md:container md:mx-auto md:mb-32">
 
@@ -17,7 +17,7 @@ export default function Header() {
                 </a>
 
                 {/* MENU(desktop and mobile) */}
-                <ul className={`w-full absolute ${open ? 'left-0' : 'left-[9999px]'} top-32 pt-5 pb-12 font-barlowFont text-lg text-center bg-white transition-all duration-300 md:static md:w-auto md:bg-transparent md:p-0 md:flex md:justify-between md:items-center md:gap-12 before:content-[''] before:block before:w-0 before:h-0 before:top-[-40px] before:right-0 before:absolute before:border-[20px] before:border-white before:border-t-transparent before:border-l-transparent before:md:none`}>
+                <ul className={`w-full absolute z-50 ${open ? 'left-0' : 'left-[9999px]'} top-32 pt-5 pb-12 font-barlowFont text-lg text-center bg-white transition-all duration-300 md:static md:w-auto md:bg-transparent md:p-0 md:flex md:justify-between md:items-center md:gap-12 before:content-[''] before:block before:w-0 before:h-0 before:top-[-40px] before:right-0 before:absolute before:border-[20px] before:border-white before:border-t-transparent before:border-l-transparent before:md:none`}>
                     <li>
                         <a href="#" className="inline-block py-4 font-semibold text-darkGrayishBlue md:text-white">
                             About
