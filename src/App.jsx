@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Graphics from "./components/Graphics";
 import Header from "./components/Header";
@@ -14,6 +15,7 @@ export default function App() {
             <Graphics />
             <Testimonials />
             <Gallery />
+            <Footer />
         </main>
     )
 }

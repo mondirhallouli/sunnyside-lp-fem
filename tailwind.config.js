@@ -16,6 +16,7 @@ export default {
                 'darkerGrayishBlue': 'hsl(213, 9%, 39%)',
                 'darkGrayishBlue': 'hsl(232, 10%, 55%)',
                 'grayishBlue': 'hsl(210, 4%, 67%)',
+                'footerBg': 'hsl(167, 44%, 70%)',
                 'white': 'hsl(0, 0%, 100%)',
             },
             fontFamily: {
