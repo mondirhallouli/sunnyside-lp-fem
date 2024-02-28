@@ -25,6 +25,10 @@ export default {
             backgroundImage: {
                 'headerBgImg-mobile': 'url("/images/mobile/image-header.jpg")',
                 'headerBgImg-desktop': 'url("/images/desktop/image-header.jpg")',
+                'graphicDesign-mobile': 'url("/images/mobile/image-graphic-design.jpg")',
+                'graphicDesign-desktop': 'url("/images/desktop/image-graphic-design.jpg")',
+                'photography-mobile': 'url("/images/mobile/image-photography.jpg")',
+                'photography-desktop': 'url("/images/desktop/image-photography.jpg")',
             }
         },
     },
