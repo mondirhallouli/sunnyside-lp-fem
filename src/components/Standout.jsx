@@ -1,10 +1,8 @@
 export default function Standout() {
     return (
         <section className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-items-center'>
-            <div className='w-full'>
-                <img src="/images/mobile/image-stand-out.jpg" alt="photo of a cup" className='md:hidden' />
-                <img src="/images/desktop/image-stand-out.jpg" alt="photo of a cup" className='hidden md:block md:w-full md:h-full md:object-cover' />
-            </div>
+            <img src="/images/mobile/image-stand-out.jpg" alt="photo of a cup" className='block md:hidden' />
+            <img src="/images/desktop/image-stand-out.jpg" alt="photo of a cup" className='hidden md:block md:w-full md:h-full' />
 
             <div className='box-border px-8 py-16 text-center md:text-left lg:px-20 2xl:px-44'>
 
