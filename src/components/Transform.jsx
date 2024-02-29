@@ -1,13 +1,26 @@
-import transformMobile from '/images/mobile/image-transform.jpg';
-import transformDesktop from '/images/desktop/image-transform.jpg';
+import { useEffect, useRef, useState } from "react";
 
 export default function Transform() {
+    const transformContentRef = useRef();
+    const [transformIntersect, setTransformIntersect] = useState();
+    const show = 'opacity-100 translate-x-0 blur-0';
+    const hide = 'opacity-0 -translate-x-full blur-sm';
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            let entry = entries[0];
+            setTransformIntersect(entry.isIntersecting);
+        });
+
+        observer.observe(transformContentRef.current);
+    }, [])
+
     return (
         <section className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-items-center'>
-            <img src="/images/mobile/image-transform.jpg" alt="photo of an egg on a yellow background" className='block md:hidden' />
-            <img src="/images/desktop/image-transform.jpg" alt="photo of an egg on a yellow background" className='hidden md:order-2 md:block md:w-full md:h-full' />
+            <img src="/images/mobile/image-transform.jpg" alt="photo of an egg" className='block md:hidden' />
+            <img src="/images/desktop/image-transform.jpg" alt="photo of an egg" className='hidden md:order-2 md:block md:w-full md:h-full' />
 
-            <div className='box-border px-8 py-16 text-center md:text-left lg:px-20 2xl:px-44'>
+            <div ref={transformContentRef} className={`${transformIntersect ? show : hide} transition-all motion-reduce:transition-none duration-1000 delay-150 px-8 py-16 text-center md:text-left lg:px-20 2xl:px-44`}>
 
                 <h3 className='font-frauncesFont text-4xl font-black text-darkDesatBlue mb-6 lg:text-5xl md:leading-tight'>Transform your brand</h3>
 

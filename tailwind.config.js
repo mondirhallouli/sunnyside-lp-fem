@@ -30,6 +30,15 @@ export default {
                 'graphicDesign-desktop': 'url("/images/desktop/image-graphic-design.jpg")',
                 'photography-mobile': 'url("/images/mobile/image-photography.jpg")',
                 'photography-desktop': 'url("/images/desktop/image-photography.jpg")',
+            },
+            animation: {
+                'fadeInFromLeft': 'fadeInFromLeft 1.5s ease-in-out forward',
+            },
+            keyframes: {
+                'fadeInFromLeft': {
+                    '0%': { 'opacity': 0 },
+                    '100%': { 'opacity': 1 },
+                }
             }
         },
     },

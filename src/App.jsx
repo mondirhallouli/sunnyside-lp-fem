@@ -8,7 +8,7 @@ import Transform from "./components/Transform";
 
 export default function App() {
     return (
-        <main className="w-full">
+        <main className="w-full overflow-x-hidden">
             <Header />
             <Transform />
             <Standout />
