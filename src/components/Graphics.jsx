@@ -15,6 +15,8 @@ export default function Graphics() {
         });
 
         observer.observe(graphicsTextRef.current, photographyTextRef.current);
+
+        return () => observer.disconnect();
     }, [])
 
     return (

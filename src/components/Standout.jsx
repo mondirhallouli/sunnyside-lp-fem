@@ -13,7 +13,9 @@ export default function Standout() {
         });
 
         observer.observe(standoutContentRef.current);
-    }, [])
+
+        return () => observer.disconnect()
+    }, []);
 
     return (
         <section ref={standoutContentRef} className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-items-center'>

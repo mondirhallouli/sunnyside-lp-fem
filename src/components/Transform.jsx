@@ -13,6 +13,8 @@ export default function Transform() {
         });
 
         observer.observe(transformContentRef.current);
+
+        return () => observer.disconnect();
     }, [])
 
     return (
